@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KitLab - Maglie da Calcio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset e font */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Montserrat', sans-serif; background: #f5f5f5; color:#333; }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg,#ff0047,#2c34c7);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.8rem; margin-bottom: 5px; }
+    header p { font-size: 1.1rem; }
+
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+
+    /* Main section */
+    main { padding: 40px 20px; max-width: 1200px; margin: auto; }
+
+    h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #222; }
+
+    /* Grid prodotti */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    }
+
+    .product img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .product img:hover {
+      transform: scale(1.05);
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+    .product-info h3 { margin-bottom: 10px; color: #222; }
+    .product-info p { font-weight: bold; color: #ff0047; font-size: 1.1rem; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* Bottone acquista */
+    .btn-buy {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #2c34c7;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .btn-buy:hover { background: #ff0047; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KitLab</h1>
+    <p>Maglie da calcio originali, vintage e retro</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Maglie Attuali</a>
+      <a href="#">Vintage</a>
+      <a href="#">Retro</a>
+      <a href="#">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Le nostre maglie</h2>
+    <div class="products">
+      <div class="product">
+        <img src="maglia-juventus.jpg" alt="Juventus 2025/26">
+        <div class="product-info">
+          <h3>Juventus 2025/26</h3>
+          <p>€79,99</p>
+          <a class="btn-buy" href="#">Acquista</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="maglia-milan-vintage.jpg" alt="Milan Vintage">
+        <div class="product-info">
+          <h3>Milan Vintage</h3>
+          <p>€89,99</p>
+          <a class="btn-buy" href="#">Acquista</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="maglia-real-retro.jpg" alt="Real Madrid Retro">
+        <div class="product-info">
+          <h3>Real Madrid Retro</h3>
+          <p>€69,99</p>
+          <a class="btn-buy" href="#">Acquista</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 KitLab. Tutti i diritti riservati.</p>
+  </footer>
+
+</body>
+</html>
